@@ -1,0 +1,14 @@
+<input type="text" #ref/>
+<button (click)="getUser(ref.value)">show</button>
+  <div class="mycards">
+  <div *ngFor="let item of items">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{item.login}}</h5>
+        <a href="#" class="btn btn-primary" (click)="getAllRepos()">Show Repos</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+<router-outlet></router-outlet>
